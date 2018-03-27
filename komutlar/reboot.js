@@ -1,18 +1,16 @@
 const Discord = require('discord.js');
 
 exports.run = (client, message, args) => {
-	
-  const embed = new Discord.RichEmbed()
-  message.delete()
-  if (message.author.id !== '335082465561673728' ) {
-    message.reply('`reboot` komutunu kullanmak için gerekli izne sahip değilsin!');
-  } else {
-    message.channel.sendMessage(`<@335082465561673728> ***Yeniden Başlıyorum*** 📮 `).then(message => {
-    console.log(`BOT: Bot yeniden başlatılıyor...`);
-    process.exit(0);
-  })
- }
-}
+
+    if (msg.author.id !== ayarlar.sahip) {
+      msg.reply('Benim yapımcım değilsin!');
+    } else {
+      msg.channel.sendMessage(`Bot yeniden başlatılıyor...`).then(msg => {
+      console.log(`BOT: Bot yeniden başlatılıyor...`);
+      process.exit(0);
+    })
+   }
+  }
 
 exports.conf = {
   enabled: true,
