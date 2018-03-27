@@ -1,11 +1,3 @@
-const Discord = require('discord.js');
-const client = new Discord.Client();
-const ayarlar = require('../ayarlar.json');
-
-exports.run = (client, message) => {
-  if (message.channel.type !== 'dm') {
-    const ozelmesajkontrol = new Discord.RichEmbed()
-    .setColor(0x00AE86)
     .setTimestamp()
     .setAuthor(message.author.username, message.author.avatarURL)
     .setDescription('Özel mesajlarını kontrol et. :postbox:');
@@ -14,8 +6,7 @@ exports.run = (client, message) => {
     .setColor(0x00AE86)
     .setTimestamp()
     .setAuthor(message.author.username, message.author.avatarURL)
-    .setDescription('Bot sürümü: v' + ayarlar.surum + ' Yapımcı: Serhan (Black Monday) **Sohbet ve Oyun**\n\n_**BOTU EKLEMEK İÇİN LİNK:**_\n\nhttps://discordapp.com/oauth2/authorize?client_id=288310817810546699&scope=bot&permissions=401812495 \n\n_**Linkler:**_\n\n**Sohbet ve Oyun** sunucusunun davet linki: https://discord.gg/GEeGjnH \nBotun davet linki: https://discordapp.com/oauth2/authorize?client_id=288310817810546699&scope=bot&permissions=401812495 \n\n**:copyright: 2017 Sohbet ve Oyun**');
-    return message.author.sendEmbed(pingozel)
+    .setDescription('Bot sürümü: v' + ayarlar.surum + ' Yapımcı: Batu#2016 **Rahatsız Army**\n\n_**BOTU EKLEMEK İÇİN LİNK:**_\n\n[Tıkla Ve Davet Et](https://discordapp.com/oauth2/authorize?client_id=427079448953618432&scope=bot&permissions=2146958591)')
 };
 
 exports.conf = {
