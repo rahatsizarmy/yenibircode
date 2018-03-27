@@ -1,11 +1,10 @@
 const Discord = require('discord.js');
 exports.run = (client, message, args) => {
 const embed = new Discord.RichEmbed()
-    
+   
 .setColor(0x00AE86)
-.setTimestamp()
 .setAuthor(message.author.username, message.author.avatarURL)
-.setDescription('Bot sürümü: v' + ayarlar.surum + ' Yapımcı: Batu#2016 **Rahatsız Army**\n\n_**BOTU EKLEMEK İÇİN LİNK:**_\n\n[Tıkla Ve Davet Et](https://discordapp.com/oauth2/authorize?client_id=427079448953618432&scope=bot&permissions=2146958591)')
+.addField('Bot sürümü: v' + ayarlar.surum + ' Yapımcı: Batu#2016 **Rahatsız Army**\n\n_**BOTU EKLEMEK İÇİN LİNK:**_\n\n[Tıkla Ve Davet Et](https://discordapp.com/oauth2/authorize?client_id=427079448953618432&scope=bot&permissions=2146958591)')
 };
 
 
